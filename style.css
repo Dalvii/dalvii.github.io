@@ -6,6 +6,8 @@
 
 * {
         box-sizing: border-box;
+        
+
 }
 
 body {
@@ -92,6 +94,92 @@ body {
     line-height: 1.5em;
 }
 
+.main-app {
+    margin-top: 50px;
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.home-header {
+    font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp-img {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.home-main-title {
+    margin-bottom: 11px;
+    margin-top: 27px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: rgb(185, 179, 168);
+    text-decoration-thickness: 4px;
+}
+
+.home-main-timeline {
+    padding-left: 3.2em;
+    text-indent: -3.2em;
+    word-wrap: break-word;
+    line-height: 25px;
+}
+
+.item-link  {
+    text-decoration: none;
+    color:inherit;
+}
+
+.socials {
+    display: flex;
+}
+
+
+.list-socials {
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 3%;
+    height: auto;
+}
+
+.list-item:hover .list-socials:hover {
+    background-color: rgb(68, 68, 68);
+    transition: 0.3s;
+}
+
+.list-item {
+    float: left;
+    display: flex;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 6%;
+    text-decoration: none;
+    color:rgb(168, 119, 180);
+    font-weight: bold;
+
+}
+
+.social-img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-desc {
+    margin-left: 10px;
+    margin-top: 4px;
+
+}
+
+
+span {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 1em;
+}
+
 
 .footer {
     text-align: center;
@@ -102,6 +190,9 @@ body {
     margin-bottom: 32px;
     margin-top: 32px;
 }
+
+/* article {
+} */
 
 
 @media (max-width: 750px) {
@@ -148,5 +239,14 @@ body {
     100% {
         transform: translateY(20%);
         opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
