@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "MPLUS Rounded Bold";
+  src: url("fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+}
+
+
+* {
+      box-sizing: border-box;
+      
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #33230e;
+  color: #dad6cf;
+  height: auto;
+  transition: background 0.5s;
+}
+
+
+
+.text-title {
+  font-family: "MPLUS Rounded Bold";
+}
+.nav-header {
+  position: fixed;
+  width: 100%;
+  background: #20202380;
+  z-index: 1;
+  height: 50px;
+}
+.header{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 70%;
+  padding: 8px;
+  height: 100%;
+}
+
+.header-title {
+  font-family: "MPLUS Rounded Bold";
+  font-size: 17px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(242, 240, 237);
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.links {
+  flex-grow: 1;
+  display: flex;
+}
+.links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #dad6cf;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.02em;
+  text-underline-offset: 4px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+.active:not(.logo a) {
+  text-decoration: underline !important;
+}
+
+.light {
+  height: 100%;
+}
+.toggleMode {
+  outline-color: transparent;
+  background: #754700;
+  border: 0;
+  height: 100%;
+  font-size: 17px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggleMode:hover {
+  background: #985200;
+}
+.moonMode {
+  background: #3e1b8d;
+}
+.moonMode:hover {
+  background: #4b2a97;
+}
+.moonMode::before {
+  content: "🌙"
+}
+.lightMode::before {
+  content: "🌞"
+}
+
+
+.main-plan {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.front-articles {
+  height: 100%;
+
+}
+.article-list {
+  max-width: 530px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1.5fr));
+  grid-template-rows: repeat(auto-fill, minmax(0, 250px));
+  grid-gap: 17px;
+  width: 100%;
+  height: 100%;
+}
+
+.list-grid a {
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 3%;
+  text-decoration: none;
+  color: inherit;
+}
+.list-grid a:hover {
+  background-color: #247a721f;
+  transition: 0.3s;
+}
+
+.item-text-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.item-img {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+}
+
+.item-desc {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5em;
+}
+
+.paragraph {
+  word-wrap: break-word;
+  text-align: justify;
+  color: #f2f0edeb;
+  line-height: 24px;
+}
+
+.main-app {
+  margin-top: 50px;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.home-header {
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  justify-content: space-between;
+}
+
+.pp-img {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.home-main-title {
+  margin-bottom: 11px;
+  margin-top: 20px;
+  line-height: 2em;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: rgb(185, 179, 168);
+  text-decoration-thickness: 4px;
+}
+.home-text-title {
+  font-size: 28px;
+  color: #6fd7ca;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3.8px;
+  text-decoration-color: #6fd7ca;
+  margin-bottom: 10px !important;
+}
+
+.home-main-timeline {
+  padding-left: 3.2em;
+  text-indent: -3.2em;
+  word-wrap: break-word;
+  line-height: 22px;
+}
+
+.item-link  {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+.list-socials {
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 10px;
+  height: auto;
+  display: flex;
+  color:#7cefe1;
+  max-width: fit-content;
+
+}
+
+.list-socials:hover {
+  transition: 0.3s;
+  background-color: #0d756b1f;
+}
+
+
+.social-logo {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.social-link {
+  text-decoration: none;
+  text-underline-offset: 5px;
+
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 92, 200);
+  text-decoration-thickness: 1px;
+}
+
+
+.social-desc {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.home-more {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-more a {
+  outline-color: transparent;
+  background-color: #0d756b;
+  color: #dad6cf;
+  outline-offset: 2px;
+  border-radius: 0.375em;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 35%;
+  cursor: pointer;
+  transition-duration: 200ms
+}
+
+.home-more-button:hover {
+  background-color: #1d948c;
+}
+
+
+span {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 1em;
+}
+
+
+.footer {
+  text-align: center;
+  opacity: 0.4;
+  overflow-wrap: break-word;
+  font-size: 13px;
+  font-family: 'BlinkMacSystemFont', "Segoe UI", 'Helvetica', 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+/* article {
+} */
+
+
+@media (max-width: 750px) {
+  .links a {
+    margin-left: 0;
+  }
+  .links {
+    justify-content: space-evenly;
+  }
+
+  .list-socials {
+    background-color: #247a721f;
+    margin-bottom: 5px;
+  }
+  .list-grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 100%));
+      grid-template-rows: repeat(auto-fill, minmax(0, 100%));
+      grid-gap: 22px;
+      width: 100%;
+      height: 100%;
+  }
+  .item-img {
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+  }
+  .header {
+      width: 95%;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+      color: #f2f0ed;
+      background: rgb(15, 17, 18);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(20%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideOutFromBottom {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(20%);
+      opacity: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
