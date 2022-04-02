@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visioconférence - Théo Vidal</title>
     <style>
         body {
             margin: 0;
-            background-color: darkslategrey;
+            background-color: #282828;
         }
+        .app {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px){
+            .app {
+                display: block;
+
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 <body style="height: 100vh;">
-    <div style="display: flex;
-        justify-content: center;
-        height: 100%;
-        align-items: center;">
-        <iframe src="https://iframe.visioligne.com/visio?key=2zrmIYwnJNKuFTXfwtZqiMPCTB6mwtB1&theme=dark" width="70%" height="650" frameborder="0" allow="camera;microphone"></iframe>
+    <div class="app">
+        <iframe src="https://iframe.visioligne.com/visio?key=2zrmIYwnJNKuFTXfwtZqiMPCTB6mwtB1&theme=dark" width="80%" height="650" frameborder="0" allow="camera;microphone;display-capture;fullscreen"></iframe>
 
 
     </div>
