@@ -307,6 +307,18 @@ span {
 }
 
 
+.c_logos {
+  display: flex;
+  margin: 10px 0 -3px 0;
+  flex-wrap: wrap;
+}
+.c_logos img {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+
+
 .footer {
   text-align: center;
   opacity: 0.4;
